@@ -12,13 +12,6 @@ const dbConfig = {
 
 const db = await mysql.createConnection(dbConfig);
 
-// Таблица пользователей
-await db.query(CREATE TABLE IF NOT EXISTS users (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    username TEXT NOT NULL,
-    password TEXT NOT NULL
-));
-
 // Регистрация
 bot.command('reg', async (ctx) => {
     let username = ctx.message.from.username;
