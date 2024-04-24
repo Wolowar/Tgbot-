@@ -1,3 +1,4 @@
+// Подключение всех необходимых библиотек и токена telegram bot
 const Telegraf = require('telegraf');
 const bot = new Telegraf('BOT_TOKEN');
 const mysql = require('promise-mysql');
